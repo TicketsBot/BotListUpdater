@@ -1,0 +1,9 @@
+[serverCounter]
+baseUrl="http://localhost:9080"
+cooldown=1
+
+[botlists]
+  [botlists.dbotsorg]
+  baseUrl="https://discordbots.org/api"
+  apiKey="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjUwODM5MTg0MDUyNTk3NTU1MyIsImJvdCI6dHJ1ZSwiaWF0IjoxNTQxMzM1NjA0fQ.XIYmNySu42d46SXp4WSti1QdOvm26Xq8CAT-ja3ODy4"
+  id="508391840525975553"
