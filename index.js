@@ -30,7 +30,6 @@ function updateDbotsOrg(count) {
 
   axios.post(`${baseUrl}/bots/${id}/stats`, data, { headers: headers })
     .then((res) => {
-      console.log(res)
     }).then((err) => {
       console.log(err)
     })
