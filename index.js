@@ -35,6 +35,22 @@ function updateDbotsOrg(count) {
     })
 }
 
+function updateDblCom(count) {
+  var baseUrl = config.botlists.dblcom.baseUrl
+  var token - config.botlists.dblcom.token
+  var id = config.botlists.dblcom.id
+
+  var data = {
+    guilds: count
+  }
+
+  var headers = {
+    Authorization: `Bot ${token}`
+  }
+
+  axios.post(`${baseUrl}/bots/${id}/stats`)
+}
+
 // Core
 async function run() {
   while(true) {
@@ -50,6 +66,7 @@ async function run() {
         var count = data.count
 
         updateDbotsOrg(count)
+        updateDblCom(count)
       })
       .catch((err) => {
         console.log(`An error occurred. Status code: ${err.response.status}. Data: ${JSON.stringify(err.response.data)}`)

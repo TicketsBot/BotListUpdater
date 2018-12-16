@@ -7,3 +7,7 @@ cooldown=1
   baseUrl="https://discordbots.org/api"
   apiKey=""
   id="508391840525975553"
+  [botlists.dblcom]
+  baseUrl="https://discordbotlist.com/api"
+  token=""
+  id="508391840525975553"
