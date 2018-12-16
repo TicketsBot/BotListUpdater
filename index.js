@@ -37,7 +37,7 @@ function updateDbotsOrg(count) {
 
 function updateDblCom(count) {
   var baseUrl = config.botlists.dblcom.baseUrl
-  var token - config.botlists.dblcom.token
+  var token = config.botlists.dblcom.token
   var id = config.botlists.dblcom.id
 
   var data = {
@@ -48,7 +48,7 @@ function updateDblCom(count) {
     Authorization: `Bot ${token}`
   }
 
-  axios.post(`${baseUrl}/bots/${id}/stats`)
+  axios.post(`${baseUrl}/bots/${id}/stats`, data, { headers: headers })
 }
 
 // Core
